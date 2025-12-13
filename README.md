@@ -26,6 +26,8 @@ Java JDK instalado (versão 8 ou superior)
 ## Compilação
 
 No diretório raiz do projeto, execute:
+
+
 1° cd src
 
 
@@ -91,6 +93,8 @@ Execução
 java -cp src tarefa2.JantarDosFilosofos
 
 Print da execução foi capturado diretamente do terminal
+
+
 ![tarefa2 img1](https://github.com/user-attachments/assets/ad053be6-1581-4508-b01f-657f0313714c)
 ![tarefa2 img2](https://github.com/user-attachments/assets/18d030a2-b9d9-4f1f-a2ba-72ad9e60a4bd)
 

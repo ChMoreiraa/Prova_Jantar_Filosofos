@@ -41,3 +41,44 @@ O programa será executado por pelo menos 30 segundos. O deadlock pode ser ident
 Print da execução foi capturado diretamente do terminal, demonstrando o momento em que todos os filósofos tentam obter o segundo garfo e ficam bloqueados, caracterizando o deadlock.
 
 <img width="795" height="456" alt="image" src="https://github.com/user-attachments/assets/d344bc80-a8ec-4c9a-b52b-adb45681b50b" />
+
+
+# Tarefa 2 – Solução com Prevenção de Deadlock
+
+## Descrição
+
+Nesta tarefa foi implementada uma modificação na solução do Jantar dos Filósofos com o objetivo de prevenir o deadlock. A estrutura geral do sistema foi mantida, utilizando cinco filósofos e cinco garfos, com cada filósofo representado por uma thread.
+A principal diferença em relação à Tarefa 1 está na ordem de aquisição dos recursos.
+
+## Prevenção de Deadlock
+
+Enquanto quatro filósofos pegam primeiro o garfo esquerdo e depois o direito, o filósofo de ID 4 faz o contrário, pegando primeiro o garfo direito e depois o esquerdo. Essa alteração quebra a condição de espera circular, impedindo que todos os filósofos fiquem bloqueados simultaneamente.
+Com isso, o sistema continua progredindo e nenhum deadlock foi observado durante a execução.
+
+## Starvation
+
+Apesar de o deadlock ser evitado, ainda existe a possibilidade de starvation, pois não há um mecanismo que garanta justiça na distribuição dos recursos. Um filósofo pode acabar comendo menos vezes dependendo do escalonamento das threads.
+
+## Comparação com a Tarefa 1
+
+Na Tarefa 1, todos os filósofos seguiam a mesma ordem de aquisição dos garfos, o que possibilitava a ocorrência de deadlock. Nesta tarefa, ter feito a inversão da ordem para um único filósofo foi suficiente para que eu conseguisse eliminar esse problema, mantendo a implementação simples e eficiente.
+
+## Estatísticas de Execução
+
+Durante a execução do programa por pelo menos dois minutos, foi contabilizado o número de vezes que cada filósofo conseguiu comer. Os resultados demonstram que o sistema permanece ativo durante todo o período, sem bloqueios totais.
+
+## Como Compilar e Executar
+
+Compilação
+1° cd src
+2° javac tarefa2\*.java
+3° cd ..
+
+Execução
+java -cp src tarefa2.JantarDosFilosofos
+
+Print da execução foi capturado diretamente do terminal
+![tarefa2 img1](https://github.com/user-attachments/assets/ad053be6-1581-4508-b01f-657f0313714c)
+![tarefa2 img2](https://github.com/user-attachments/assets/18d030a2-b9d9-4f1f-a2ba-72ad9e60a4bd)
+
+

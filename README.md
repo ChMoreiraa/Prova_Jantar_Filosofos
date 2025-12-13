@@ -3,7 +3,7 @@
 Este repositório contém as 5 tarefas solicitadas na prova final de Programação Paralela e Distribuída
 
 # Tarefa 1 – Jantar dos Filósofos (Deadlock)
-Descrição
+## Descrição
 
 Nesta tarefa foi implementada uma versão básica do problema do Jantar dos Filósofos utilizando Java e threads, com o objetivo de demonstrar a ocorrência de deadlock. O sistema é composto por cinco filósofos e cinco garfos, onde cada filósofo é uma thread que alterna entre os estados de pensar e comer.
 Todos os filósofos seguem a mesma ordem de aquisição dos recursos, pegando primeiro o garfo esquerdo e depois o garfo direito. Essa abordagem foi escolhida propositalmente, pois cria um cenário propício à ocorrência de deadlock.

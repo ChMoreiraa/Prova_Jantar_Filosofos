@@ -27,7 +27,11 @@ Java JDK instalado (versão 8 ou superior)
 
 No diretório raiz do projeto, execute:
 1° cd src
+
+
 2° javac tarefa1\*.java
+
+
 3° cd ..
 
 ## Execução
@@ -70,11 +74,20 @@ Durante a execução do programa por pelo menos dois minutos, foi contabilizado 
 ## Como Compilar e Executar
 
 Compilação
+
+
 1° cd src
+
+
 2° javac tarefa2\*.java
+
+
 3° cd ..
 
+
 Execução
+
+
 java -cp src tarefa2.JantarDosFilosofos
 
 Print da execução foi capturado diretamente do terminal

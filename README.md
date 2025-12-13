@@ -26,21 +26,18 @@ Java JDK instalado (versão 8 ou superior)
 # Compilação
 
 No diretório raiz do projeto, execute:
-
-# 1° cd src
-# 2° javac tarefa1\*.java
-# 3° cd ..
+1° cd src
+2° javac tarefa1\*.java
+3° cd ..
 
 # Execução
 
 Ainda no diretório raiz, execute:
-
-# java -cp src tarefa1.JantarDosFilosofos
+java -cp src tarefa1.JantarDosFilosofos
 
 O programa será executado por pelo menos 30 segundos. O deadlock pode ser identificado quando os logs param de ser exibidos no terminal.
 
 # Evidências
-
 Print da execução foi capturado diretamente do terminal, demonstrando o momento em que todos os filósofos tentam obter o segundo garfo e ficam bloqueados, caracterizando o deadlock.
 
 <img width="795" height="456" alt="image" src="https://github.com/user-attachments/assets/d344bc80-a8ec-4c9a-b52b-adb45681b50b" />

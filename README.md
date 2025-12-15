@@ -92,7 +92,7 @@ Execução
 
 java -cp src tarefa2.JantarDosFilosofos
 
-Print da execução capturado diretamente do terminal
+Foi capturado um print do terminal durante a execução do programa.
 
 
 ![tarefa2 img1](https://github.com/user-attachments/assets/ad053be6-1581-4508-b01f-657f0313714c)
@@ -133,10 +133,47 @@ Execução
 java -cp src tarefa3.JantarDosFilosofos
 
 
-Print da execução foi capturado diretamente do terminal
+Foi capturado um print do terminal durante a execução do programa.
 
 
 ![tarefa3](https://github.com/user-attachments/assets/337a7497-05fe-4bba-9677-1956b6a7c71d)
 
 
 # Tarefa 4 – Jantar dos Filósofos com Monitor (Garçom)
+
+
+## Descrição
+
+Nesta tarefa, o problema do Jantar dos Filósofos foi resolvido utilizando o conceito de monitor, centralizando o controle de acesso aos recursos compartilhados por meio da classe Mesa. Diferentemente das tarefas anteriores, os garfos foram modelados como objetos independentes, enquanto a sincronização ficou totalmente encapsulada no monitor. Cada filósofo é representado por uma thread que solicita à mesa permissão para comer, garantindo que os dois garfos necessários estejam disponíveis antes de iniciar a refeição.
+
+
+## Uso do Monitor
+
+O monitor implementado na classe Mesa garante que um filósofo só consiga comer quando ambos os garfos necessários estiverem livres. Caso contrário, a thread entra em estado de espera até que os recursos sejam liberados. Quando um filósofo termina de comer, a mesa libera os garfos e notifica as demais threads. Essa abordagem garante exclusão mútua e evita condições de corrida.
+
+
+## Como Compilar e Executar
+
+
+Compilação
+
+
+cd src
+
+
+javac tarefa4\*.java
+
+
+cd ..
+
+
+Execução
+
+
+java -cp src tarefa4.JantarDosFilosofos
+
+
+Foi capturado um print do terminal durante a execução do programa.
+
+
+<img width="693" height="665" alt="image" src="https://github.com/user-attachments/assets/7d3edd5e-26c2-485c-a453-e2319453edc7" />

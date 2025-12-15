@@ -188,5 +188,5 @@ sincronização e starvation.
 
 A análise completa encontra-se no arquivo:
 
-src/tarefa5/tarefa5_analise.txt
+src -> tarefa5 -> tarefa5_analise.txt
 

@@ -1,0 +1,3 @@
+Na Tarefa 2, foquei na prevenção do deadlock observado na tarefa anterior. Para isso, alterei a ordem de aquisição dos recursos, fazendo com que apenas um dos filósofos pegasse os garfos em ordem inversa em relação aos demais.
+Essa modificação foi suficiente para quebrar a condição de espera circular, permitindo que o sistema continuasse executando sem travamentos. Durante a execução do programa, observei que os filósofos continuam alternando entre pensar e comer, sem que ocorra deadlock.
+Apesar disso, identifiquei que a solução ainda pode apresentar starvation, uma vez que não há um mecanismo explícito que garanta justiça no acesso aos recursos. Essa tarefa mostrou que eliminar o deadlock não significa, necessariamente, resolver todos os problemas de concorrência.

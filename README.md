@@ -177,3 +177,16 @@ Foi capturado um print do terminal durante a execução do programa.
 
 
 <img width="693" height="665" alt="image" src="https://github.com/user-attachments/assets/7d3edd5e-26c2-485c-a453-e2319453edc7" />
+
+
+# Tarefa 5 – Análise Crítica e Consolidação dos Conceitos
+
+A Tarefa 5 consiste em uma análise crítica das soluções desenvolvidas nas
+tarefas anteriores, com o objetivo de consolidar os conceitos estudados
+em programação paralela e concorrente, como deadlock, exclusão mútua,
+sincronização e starvation.
+
+A análise completa encontra-se no arquivo:
+
+src/tarefa5/tarefa5_analise.txt
+

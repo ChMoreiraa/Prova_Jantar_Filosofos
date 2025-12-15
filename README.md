@@ -99,3 +99,25 @@ Print da execução foi capturado diretamente do terminal
 ![tarefa2 img2](https://github.com/user-attachments/assets/18d030a2-b9d9-4f1f-a2ba-72ad9e60a4bd)
 
 
+# Tarefa 3 – Jantar dos Filósofos com Semáforos
+
+## Descrição
+
+Nesta tarefa, o problema do Jantar dos Filósofos foi implementado utilizando semáforos para controlar o acesso aos garfos, que são recursos compartilhados entre as threads. Cada filósofo é representado por uma thread que alterna entre pensar e comer.
+
+
+## Uso de Semáforos
+
+Cada garfo possui um semáforo binário que permite que apenas um filósofo o utilize por vez. Antes de comer, o filósofo precisa adquirir os semáforos correspondentes aos dois garfos. Após a refeição, os semáforos são liberados, permitindo que outros filósofos utilizem os recurso. Esse controle garante exclusão mútua e evita condições de corrida.
+
+
+## Como Compilar e Executar
+
+
+
+Compilação
+
+
+cd src</br>
+javac tarefa3\*.java</br>
+cd ..

@@ -44,7 +44,7 @@ java -cp src tarefa1.JantarDosFilosofos
 O programa será executado por pelo menos 30 segundos. O deadlock pode ser identificado quando os logs param de ser exibidos no terminal.
 
 ## Evidências
-Print da execução foi capturado diretamente do terminal, demonstrando o momento em que todos os filósofos tentam obter o segundo garfo e ficam bloqueados, caracterizando o deadlock.
+Print da execução capturado diretamente do terminal, demonstrando o momento em que todos os filósofos tentam obter o segundo garfo e ficam bloqueados, caracterizando o deadlock.
 
 <img width="795" height="456" alt="image" src="https://github.com/user-attachments/assets/d344bc80-a8ec-4c9a-b52b-adb45681b50b" />
 
@@ -92,7 +92,7 @@ Execução
 
 java -cp src tarefa2.JantarDosFilosofos
 
-Print da execução foi capturado diretamente do terminal
+Print da execução capturado diretamente do terminal
 
 
 ![tarefa2 img1](https://github.com/user-attachments/assets/ad053be6-1581-4508-b01f-657f0313714c)
@@ -118,6 +118,25 @@ Cada garfo possui um semáforo binário que permite que apenas um filósofo o ut
 Compilação
 
 
-cd src</br>
-javac tarefa3\*.java</br>
+cd src
+
+
+javac tarefa3\*.java
+
+
 cd ..
+
+
+Execução
+
+
+java -cp src tarefa3.JantarDosFilosofos
+
+
+Print da execução foi capturado diretamente do terminal
+
+
+![tarefa3](https://github.com/user-attachments/assets/337a7497-05fe-4bba-9677-1956b6a7c71d)
+
+
+# Tarefa 4 – Jantar dos Filósofos com Monitor (Garçom)
